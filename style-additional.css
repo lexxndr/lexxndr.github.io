@@ -1,0 +1,54 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+html, body {
+    overflow-x: hidden; /* remove scroll */
+    margin: 0; /* remove margin */
+    height: 100%; /* set height to 100% for buttons */
+}
+a { /* removes text decoration for hrefs */
+    text-decoration: none;
+}
+pre { /* code snippets */
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    width: 850px;
+    padding-top: 20px;
+}
+button { /* all buttons: main and next */
+    border:none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    width:480px;
+    position: absolute;
+    height: 100%;
+    font-size: large;
+    font-weight: 1000;
+    transition: all 400ms ease-out; /* animations */
+}
+#nextbutton { /* button that refers to next lesson */
+    margin-left: 1370px;
+    width: 540px;
+    height: 50%;
+}
+#backbutton {
+    margin-left: 1370px;
+    width: 540px;
+    height: 52%;
+    margin-top: 470px;
+}
+button:hover { /* hover animation */
+    background-color: rgb(219, 219, 219);
+}
+#centered { /* all centered text */
+    margin-left: 500px;
+    animation-name: slideIn;
+    animation: slideIn 1s ease;
+}
+@keyframes slideIn { /* animation for slide */
+    0% {transform: translateY(-2000px);}
+    100% {transform: translateY(0px);}
+}
+div { /* all divs for positioning */
+    max-width: 900px;
+}

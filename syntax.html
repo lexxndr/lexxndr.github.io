@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-additional.css">
+    <title>Syntax - Python Mini-Course</title>
+</head>
+<body>
+    <a href="index.html"><button id='content'>Main Menu</button></a>
+    <a href="console-output.html"><button id='nextbutton'>Next</button></a>
+    <a href="what-is-python.html"><button id='backbutton'>Back</button></a>
+    <div id='centered'>
+    <h2>Python syntax</h2>
+    <h4>Python has simple syntax, but with some difficulties, as:</h4>
+    <h3>1.Tabulation</h3>
+    <pre>
+        i=0
+        while i <= 10:
+        print('hi')
+        i++
+        print('end')
+    </pre>
+    <p>"What's wrong?" - May you ask. You expect this to repeat n times and after this it should be printing "end", so?</p>
+    <p>- Not that easy. This code is gonna:</p>
+    <p>1. Call an error "SyntaxError"<br>2. Print hi AND end N times.</p>
+    <p>"How to fix it?" - Just add some tabs.</p>
+    <pre>
+        i = 0
+        while i <= 10:
+            print('hi')
+            i++
+        print('end')
+    </pre>
+    <p>This pseudocode is gonna work.</p>
+    <pre>
+        > hihihihihihihihihihi
+        > end
+    </pre>
+    <p>Tabs is frequently 4 spaces and it helps interpreter to understand what to do.</p>
+    <h3>2. Symbols: ",)({}:  , etc</h3>
+    <p>You saw in previous snippet, how i printed "hi" and "end".<br>To make string, you need to cover your text in quotation marks. Example:</p>
+    <pre>
+        variable = <b>"</b>Hello World!<b>"</b>
+    </pre>
+    <p>Also, in previous snippet you saw a colon after "10" and it means this:</p>
+    <pre>
+        while i less than 10 <b>do</b>
+    </pre>
+    <p>The word "do" in this snippet is just a colon.</p>
+    <pre>
+        while i <= 10<b>:</b>
+    </pre>
+    <p>Also, you can use "[]" for lists, "{}" for dictionaries and "()" for tuples.</p>
+    <pre>
+        my_list = [1,3,4]
+        my_dict = {1:'a', 2:'b', 3:'c'}
+        my_tuple = (1,2,3)
+
+        print(my_list[0])
+        print(my_dict[1])
+        print(my_tuple[0])
+
+        > 1
+        > a
+        > 1
+    </pre>
+    <h3>3. Mathematic operations</h3>
+    <p>You can use symbols like: > < = !</p>
+    <pre>
+        i = 1
+        if i > 0:
+            print('everytime gonna print this')
+        elif i < 0:
+            print('not gonna print this')
+        > everytime gonna print this
+    </pre>
+    <p>To compare like "less or same" you need to compare arguments with <= or >=</p>
+    <p>Also, != symbol is used as "not equal"</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

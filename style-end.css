@@ -1,0 +1,119 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+html, body { /* body and html */
+    background-color: #fff2de;
+    height: 100%;
+    overflow: hidden;
+}
+a { /* hrefs */
+    text-decoration: none;
+    width: 300px;
+    height: 150px;
+    color: black;
+    position: absolute;
+}
+.buttons2 { /* 2nd row of buttons */
+    margin-top: 20px;
+}
+#main { /* main area */
+    transform: translate(500px);
+    padding: 10px;
+}
+#main1 { /* main area */
+    transform: translate(500px,250px);
+}
+#lowchild { /* button area, text and buttons */
+    transform: translateX(510px);
+    padding: 0px;
+}
+.set-buttons { /* all buttons */
+    width: 300px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-top: 20px;
+    transform: translateX(250px);
+    transition: 0.5s ease-out;
+    transition-property: all;
+    position:relative;
+}
+.set-buttons:hover { /* hover on buttons to make animation */
+    box-shadow: 0px 0px 15px 15px rgba(34, 60, 80, 0.1);
+    background-image: linear-gradient(to right top,rgb(255, 255, 255), rgb(211, 211, 211));
+    transform: scale(1.05);
+    z-index: 1;
+    transform: translateX(250px);
+}
+#button-body { /* description of a button */
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-left: 10px;
+    position: absolute;
+}
+#button-head { /* title of a button */
+    font-size: 22px;
+    font-weight: 50;
+    line-height: 15px;
+    padding-left: 10px;
+}
+#leg { /* made by zone */
+    border-top: 1px solid black;
+    margin-top: 30px;
+}
+#leg p { /* made by */
+    padding-top: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 1000;
+}
+img { /* logos for buttons */
+    position:relative;
+    margin-left: 240px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+#card {
+    background-image: url('card-placeholder.png');
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    transform: translateX(250px);
+}
+input {
+    border:none;
+    height: 30px;
+    width:auto;
+    color:white;
+}
+#card-id {
+    margin-top: 90px;
+    margin-left: 20px;
+    width: 120px;
+}
+#card-dur {
+    margin-top: 130px;
+    margin-left:20px;
+    width: 78px;
+}
+#card-cvv {
+    margin-top: 30px;
+    height: 25px;
+    margin-left:230px;
+    width:50px;
+}
+#email {
+    height: 25px;
+    margin-top:30px;
+}
+.card-data {
+    padding-left:5px;
+    background: transparent;
+    position: absolute;
+    border-radius: 0px;
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+}

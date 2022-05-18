@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-additional.css">
+    <title>Import - Python Mini-Course</title>
+</head>
+<body>
+    <a href="index.html"><button id='content'>Main Menu</button></a>
+    <a href="variables.html"><button id='nextbutton'>Next</button></a>
+    <a href="console-output.html"><button id='backbutton'>Back</button></a>
+    <div id='centered'>
+    <h2>Import Command</h2>
+    <pre>
+        import *module name*
+    </pre>
+    <p>It's not highly used in first steps of programming, but you will need to import modules.</p>
+    <p>First, you need to install module. In your CMD, type:</p>
+    <pre>
+        pip install *module name*
+    </pre>
+    <p>Then, you can import this module in code:</p>
+    <pre>
+        import numpy
+    </pre>
+    <p>This code snippet will import <a href='https://numpy.org/'>numpy module.</a></p>
+    <pre>
+        import numpy <b>as</b> np
+    </pre>
+    <p>This code snippet will import <a href='https://numpy.org/'>numpy module </a>as 'np', so, it will be used in the code like that:</p>
+    <pre>
+        import numpy as np
+        np.function()
+    </pre>
+    <p>You can also import certain things with "from" argument:</p>
+    <pre>
+        from numpy import function
+        from numpy import *
+    </pre>
+    <p>This code will import numpy's "function" in your code (first line), and import all numpy's functions in your code (second line)</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
